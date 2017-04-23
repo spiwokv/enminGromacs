@@ -1,0 +1,37 @@
+;
+;	User spoel (236)
+;	Wed Nov  3 17:12:44 1993
+;	Input file
+;
+title               =  Yo
+cpp                 =  /usr/bin/cpp
+integrator          =  sd
+dt                  =  0.01	; ps !
+nsteps              =  100000	; total 1 ns.
+nstcomm             =  0
+nstxout             =  100
+nstvout             =  100
+nstfout             =  0
+nstlog              =  100
+nstenergy           =  100
+nstlist             =  0
+pbc                 =  no
+ns_type             =  simple
+coulombtype         =  Cut-off
+rlist               =  0.0
+rcoulomb            =  0.0
+rvdw                =  0.0
+comm_mode           =  ANGULAR
+; Berendsen temperature coupling is on in two groups
+Tcoupl              =  V-rescale
+tc-grps		    =  System
+tau_t               =  0.1
+ref_t               =  300
+pcoupl              =  no
+energygrps          =  System
+; Isotropic pressure coupling is now on
+; Generate velocites is off at 300 K.
+gen_vel             =  yes
+gen_temp            =  300.0
+gen_seed            =  666
+

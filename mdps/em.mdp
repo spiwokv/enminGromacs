@@ -1,0 +1,26 @@
+;
+;	User spoel (236)
+;	Wed Nov  3 17:12:44 1993
+;	Input file
+;
+title               =  Yo
+cpp                 =  /usr/bin/cpp
+integrator          =  steep
+nsteps              =  2000
+emtol               =  0
+emstep              =  0.01
+nstcomm             =  1
+nstxout             =  1000
+nstvout             =  1000
+nstfout             =  0
+nstlog              =  100
+nstenergy           =  100
+nstlist             =  0
+ns_type             =  simple
+pbc                 =  no
+coulombtype         =  Cut-off
+rlist               =  0.0
+rcoulomb            =  0.0
+rvdw                =  0.0
+energygrps          =  System
+
